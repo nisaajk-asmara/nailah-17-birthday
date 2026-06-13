@@ -1,0 +1,416 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Cormorant Garamond',serif;
+    overflow-x:hidden;
+    background:#556242;
+}
+
+/* OPENING */
+
+#opening{
+    min-height:100vh;
+    background:url("assets/floral-bg.jpg") center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.opening-card{
+    background:white;
+    width:min(90%,500px);
+    padding:50px 30px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.opening-card h1{
+    color:#7c0014;
+    font-size:clamp(2rem,5vw,4rem);
+    margin-bottom:20px;
+}
+
+#openBtn{
+    border:none;
+    background:none;
+    color:#7c0014;
+    text-decoration:underline;
+    font-size:clamp(1.2rem,3vw,2rem);
+    cursor:pointer;
+}
+
+/* MAIN */
+
+#mainInvitation{
+    display:none;
+    background:#5a6743;
+    min-height:100vh;
+}
+
+/* HERO */
+
+.hero{
+    position:relative;
+    padding:80px 20px 40px;
+    text-align:center;
+    background:#fff;
+}
+
+.envelope-wrapper{
+    position:relative;
+    width:220px;
+    margin:auto;
+}
+
+.envelope{
+    width:100%;
+}
+
+.flower{
+    width:80px;
+    position:absolute;
+    left:-20px;
+    bottom:-10px;
+}
+
+.pink-frame{
+    margin-top:30px;
+    position:relative;
+}
+
+.pink-frame img{
+    width:min(90vw,500px);
+}
+
+.frame-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:80%;
+}
+
+.invite-text{
+    font-size:clamp(1rem,2vw,1.5rem);
+}
+
+.name{
+    font-family:'Great Vibes',cursive;
+    color:#21411e;
+    font-size:clamp(3rem,8vw,6rem);
+}
+
+.party{
+    font-size:clamp(1.3rem,3vw,2rem);
+    margin-top:10px;
+}
+
+.date{
+    margin-top:10px;
+    font-size:clamp(1rem,2vw,1.4rem);
+}
+
+/* MUSIC */
+
+.music-player{
+    margin-top:20px;
+}
+
+.music-player img{
+    width:90px;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.music-player img:hover{
+    transform:rotate(360deg);
+}
+
+.music-player p{
+    font-size:1rem;
+}
+
+/* DETAILS */
+
+.details{
+    background:#5a6743;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+    position:relative;
+}
+
+.date-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
+
+.date-box h2{
+    font-size:5rem;
+    font-weight:300;
+}
+
+.date-box p{
+    font-size:1.4rem;
+}
+
+.gazebo{
+    width:min(80vw,400px);
+    margin:30px auto;
+    display:block;
+}
+
+.time-box h2{
+    font-size:3rem;
+    margin-bottom:30px;
+}
+
+.venue h1{
+    font-size:clamp(2rem,5vw,4rem);
+}
+
+.venue a{
+    display:inline-block;
+    margin:20px 0;
+    background:#efced5;
+    color:#444;
+    text-decoration:none;
+    padding:10px 30px;
+    border-radius:8px;
+}
+
+.venue h3{
+    font-size:1.5rem;
+}
+
+/* RSVP */
+
+.rsvp-section{
+    background:#f3d9df;
+    padding:70px 20px;
+}
+
+.rsvp-card{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border:5px solid #5a6743;
+    border-radius:10px;
+    transform:none;
+}
+
+.rsvp-card h1{
+    text-align:center;
+    color:#445431;
+    font-size:4rem;
+    margin-bottom:30px;
+}
+
+#rsvpForm{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+#rsvpForm input,
+#rsvpForm select{
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:1rem;
+}
+
+#rsvpForm button{
+    border:none;
+    background:#f1cfd7;
+    padding:15px;
+    cursor:pointer;
+    border-radius:8px;
+    font-size:1rem;
+}
+
+/* RESPONSES */
+
+.response-wrapper{
+    max-width:800px;
+    margin:50px auto 0;
+}
+
+.response-wrapper h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#fff;
+}
+
+#responses{
+    display:grid;
+    gap:15px;
+}
+
+.guest-card{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+}
+
+.guest-card h4{
+    margin-bottom:5px;
+    color:#445431;
+}
+
+/* FOOTER */
+
+footer{
+    background:#3f4a31;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    line-height:1.8;
+}
+
+/* BUTTERFLY */
+
+.butterfly{
+    position:fixed;
+    width:90px;
+    z-index:999;
+    pointer-events:none;
+}
+
+.butterfly1{
+    left:3%;
+    top:15%;
+    animation:fly1 10s infinite alternate;
+}
+
+.butterfly2{
+    right:3%;
+    bottom:15%;
+    animation:fly2 12s infinite alternate;
+}
+
+@keyframes fly1{
+    from{
+        transform:translate(0,0);
+    }
+    to{
+        transform:translate(100px,50px);
+    }
+}
+
+@keyframes fly2{
+    from{
+        transform:translate(0,0);
+    }
+    to{
+        transform:translate(-100px,-50px);
+    }
+}
+
+/* TABLET */
+
+@media(max-width:768px){
+
+.rsvp-card{
+    transform:none;
+}
+
+.rsvp-card h1{
+    font-size:3rem;
+}
+
+.gazebo{
+    width:90%;
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:480px){
+
+.date-box h2{
+    font-size:4rem;
+}
+
+.time-box h2{
+    font-size:2.2rem;
+}
+
+.venue h1{
+    font-size:2.2rem;
+}
+
+.rsvp-card{
+    padding:20px;
+}
+
+.rsvp-card h1{
+    font-size:2.5rem;
+}
+
+.music-player img{
+    width:70px;
+}
+
+.flower{
+    width:60px;
+}
+
+}
+
+/* LARGE DESKTOP */
+
+@media(min-width:1400px){
+
+.hero{
+    padding-top:120px;
+}
+
+.gazebo{
+    width:500px;
+}
+
+.venue h1{
+    font-size:5rem;
+}
+
+}
+
+.spinning{
+    animation:spin 3s linear infinite;
+}
+
+@keyframes spin{
+
+from{
+    transform:rotate(0deg);
+}
+
+to{
+    transform:rotate(360deg);
+}
+
+}
+
+section{
+    opacity:1;
+    transition:.8s;
+}
+
+.show{
+    opacity:1;
+}

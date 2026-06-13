@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nailah's Birthday Invitation</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- OPENING -->
+
+<section id="opening">
+
+    <div class="opening-card">
+
+        <h1>You've been invited!</h1>
+
+        <button id="openBtn">
+            Click HERE
+        </button>
+
+    </div>
+
+</section>
+
+<!-- MAIN -->
+
+<section id="mainInvitation">
+
+    <!-- BACKGROUND FLOWERS -->
+
+    <img src="assets/butterfly.png" class="butterfly butterfly1">
+    <img src="assets/butterfly.png" class="butterfly butterfly2">
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="envelope-wrapper">
+
+            <img
+            src="assets/envelope.png"
+            class="envelope"
+            alt="Envelope">
+
+            <img
+            src="assets/flower.png"
+            class="flower"
+            alt="Flower">
+
+        </div>
+
+        <div class="pink-frame">
+
+            <img
+            src="assets/pink-frame.png"
+            alt="Frame">
+
+            <div class="frame-content">
+
+                <p class="invite-text">
+                    You are Invited to:
+                </p>
+
+                <h2 class="name">
+                    Nailah's
+                </h2>
+
+                <h3 class="party">
+                    Birthday Party
+                </h3>
+
+                <p class="date">
+                    19.06.26
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="music-player">
+
+            <img
+            id="musicBtn"
+            src="assets/vinyl.png"
+            alt="Music">
+
+            <p>click to play sound!</p>
+
+        </div>
+
+    </section>
+
+    <!-- EVENT DETAILS -->
+
+    <section class="details">
+
+        <div class="date-box">
+
+            <h2>19</h2>
+
+            <div>
+                <p>June</p>
+                <p>2026</p>
+            </div>
+
+        </div>
+
+        <img
+        src="assets/gazebo.png"
+        class="gazebo"
+        alt="Gazebo">
+
+        <div class="time-box">
+
+            <h2>5 pm</h2>
+
+        </div>
+
+        <div class="venue">
+
+            <h1>Smart Hotel</h1>
+
+            <a
+            href="https://maps.app.goo.gl/tWuARkEc5nHDo1Fz7?g_st=ic"
+            target="_blank">
+
+                View Map
+
+            </a>
+
+            <h3>
+                Dresscode: Black
+            </h3>
+
+        </div>
+
+    </section>
+
+    <!-- RSVP -->
+
+    <section class="rsvp-section">
+
+        <div class="rsvp-card">
+
+            <h1>RSVP</h1>
+
+            <form id="rsvpForm">
+
+                <input
+                type="text"
+                id="guestName"
+                placeholder="Your name"
+                required>
+
+                <select id="attendance">
+
+                    <option>
+                        Absolutely, wouldn't miss it!
+                    </option>
+
+                    <option>
+                        Can't make it this time.
+                    </option>
+
+                </select>
+
+                <button type="submit">
+                    RSVP now
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- RESPONSES -->
+
+        <div class="response-wrapper">
+
+            <h2>
+                Guest Responses
+            </h2>
+
+            <div id="responses">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            Design by Nisaajk
+        </p>
+
+        <p>
+            khairunnisaa.asmara@gmail.com
+        </p>
+
+        <p>
+            +62 822 853 4045
+        </p>
+
+    </footer>
+
+</section>
+
+<!-- AUDIO -->
+
+<audio
+id="bgMusic"
+loop>
+
+<source
+src="assets/music.mp3"
+type="audio/mpeg">
+
+</audio>
+
+<script type="module" src="script.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
